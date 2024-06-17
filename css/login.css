@@ -1,0 +1,37 @@
+.contactus_main_box {
+    width: 1080px;
+    margin: 0 auto;
+    height: 350px;
+    background-color: #A5C7AC;
+    margin-bottom: 50px;
+}
+
+.contactus_main_box img {
+    height: 350px;
+    float: left;
+}
+
+.contactus_msg {
+    color: #fff;
+    width: 300px;
+    margin-left: 780px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+
+.contactus_msg p {
+    font-weight: bolder;
+}
+
+.contactus_msg p span {
+    font-size: 30px;
+}
+
+.contactus_msg ul li {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.contactus_msg ul {
+    margin-top: 20px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的家乡河南信阳</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/history.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .contactus_main_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ff {
+            width: 500px;
+            margin: 0 auto;
+        }
+        .ff input, .ff textarea, .ff button {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .ff input[type="text"], .ff input[type="password"], .ff textarea {
+            height: 30px;
+        }
+        .ff button {
+            height: 40px;
+            margin-top: 20px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+    <script>
+        function validateForm(event) {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var message = document.getElementById("message");
+            
+            if (username === "" || password === "") {
+                message.textContent = "账号和密码不能为空！";
+                event.preventDefault(); // 阻止表单提交
+                return false;
+            }
+            // 可以添加更多的验证逻辑
+            
+            message.textContent = ""; // 清除错误信息
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <img src="./images/z1.jpg" alt="" style="height: 600px; width: 100%;">
+    <div id="title" style="font-size: 50px;">
+        <div>
+            欢迎来到河南信阳！
+        </div>
+        <img src="images/logo1.png" alt="" style="height: 200px;">
+    </div>
+    <!-- 导航栏代码 -->
+    <nav>
+        <div class="nav_list">
+            <a href="./index.html">首页</a>
+            <a href="./history.html">历史文化</a>
+            <a href="./food.html">信阳美食</a>
+            <a href="./view.html">信阳风景</a>
+            <a href="./economy.html">科技发展</a>
+            <a href="./login.html">登录注册</a>
+
+        </div>
+    </nav>
+    <div id="banner">
+        <img src="./images/g1.jpg" alt="" style="height: 500px;">
+    </div>
+    <!-- 页面位置导航 -->
+    <div id="little_nav">
+        <!-- 页面位置链接 -->
+    </div>
+    <div id="contactus_main" style="background-image: url(./images/g2.jpg); background-size: 80% 100%; background-repeat: no-repeat; background-position: center; height: 650px;">
+        <div class="contactus_main_box">
+            <div class="ff">
+                <h1>登录</h1>
+                <form onsubmit="return validateForm(event)">
+                    账号：<input type="text" id="username" name="username" required>
+                    密码：<input type="password" id="password" name="password" required>
+                    <button type="submit">登录</button>
+                    <p id="message" class="error"></p>
+                </form>
+            </div>
+        </div>
+        <div class="contactus_main_box">
+            <div class="ff">
+                <h1>注册</h1>
+                <form>
+                    姓名：<input type="text" id="fullname" name="fullname" required>
+                    密码：<input type="password" id="password" name="password" required>
+                    留言：<textarea id="message" name="message" required></textarea>
+                    <button type="submit">注册</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚 -->
+    <footer>
+        河南信阳文化旅行社 FROM QUANXIN CC
+    </footer>
+</body>
+</html>

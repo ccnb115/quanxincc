@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#title {
+    margin: 50px auto;
+    height: 30px;
+    background-color: #ffffff;
+    color: #941515;
+    text-align: center;
+    color: black
+}
+
+#title>div {
+    width: 1100px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bolder;
+    color: #1d70af;
+}
+
+#title>div span:last-child {
+    float: right;
+}
+
+nav {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    height: 40px;
+    padding: 20px 0px;
+}
+
+
+
+.nav_list {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    
+}
+
+.nav_list a {
+    display: inline-block;
+    height: 40px;
+    line-height: 50px;
+    text-decoration: underline;
+    color: #004be0;
+    margin-left: 60px;
+}
+
+.nav_list a:hover {
+    color: #A5C7AC;
+}
+
+.more_suplist {
+    display: block;
+    width: 137px;
+    height: 36px;
+    margin: 0 auto;
+    color: #A5C7AC;
+    border: 1px solid #A5C7AC;
+    border-radius: 18px;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+#footer_nav {
+    background-color: #252525;
+    padding: 40px;
+    font-size: 0px;
+}
+
+#footer_nav ul {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+#footer_nav li {
+    display: inline-block;
+    height: 160px;
+    width: 20%;
+    overflow: hidden;
+}
+
+#footer_nav li h4 {
+    color: #CCCCCC;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#footer_nav li p {
+    color: #666666;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#footer_nav li p:hover {
+    color: #A5C7AC;
+}
+
+footer {
+    background-color:rgba(196, 140, 27, 0.427);
+    color: #000000;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 50px;
+}
+
+#little_nav {
+    width: 1100px;
+    margin: 0 auto;
+    line-height: 30px;
+    font-size: 25px;
+    padding: 20px 0px;
+    margin-bottom: 30px;
+}
+
+#little_nav a {
+    text-decoration: none;
+    color: #666666;
+}
+
+.little_navmore {
+    margin: 0px 5px;
+}
+
+.list_h4 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.list_h4 a {
+    display: inline-block;
+    background-color: rgb(96, 99, 81);
+    color: #ffffff;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+h5 {
+    color: #404040;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.little_box2 {
+    text-align: center;
+}
+
+.little_box2 p {
+    text-align: left;
+}
+#title img {
+    float: left;
+    margin-right: 20px; /* 可根据需要调整间距 */
+}
+
+
+
+
+#banner {
+    position: relative;
+    height: 600px; /* 根据图片高度设置 */
+}
+
+#banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* 确保图片宽度自适应 */
+}
+
+.banner-text {
+    position: absolute;
+    bottom: 20px; /* 距离底部的距离 */
+    left: 20px; /* 距离左侧的距离 */
+    color: white; /* 文字颜色 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+    padding: 10px;
+    width: calc(100% - 40px); /* 减去左右padding的宽度 */
+    text-align: center; /* 文字居中 */
+}
+
+.banner-text h2 {
+    margin: 0 0 10px;
+    font-size: 24px; /* 标题字体大小 */
+}
+
+.banner-text p {
+    margin: 0;
+    font-size: 16px; /* 描述文字字体大小 */
+}
